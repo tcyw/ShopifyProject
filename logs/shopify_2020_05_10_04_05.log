@@ -1,0 +1,401 @@
+2020-05-10 04:41:45 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: shopifyproject)
+2020-05-10 04:41:45 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.7 (default, Mar 26 2020, 15:48:22) - [GCC 7.3.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-centos-7.7.1908-Core
+2020-05-10 04:41:45 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2020-05-10 04:41:45 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'shopifyproject',
+ 'CONCURRENT_REQUESTS': 100,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 100,
+ 'CONCURRENT_REQUESTS_PER_IP': 100,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 1,
+ 'DOWNLOAD_TIMEOUT': 50,
+ 'LOG_FILE': 'logs/shopify_2020_05_10_04_05.log',
+ 'NEWSPIDER_MODULE': 'shopifyproject.spiders',
+ 'RETRY_TIMES': 5,
+ 'SPIDER_MODULES': ['shopifyproject.spiders']}
+2020-05-10 04:41:45 [scrapy.extensions.telnet] INFO: Telnet Password: 409016fded225af3
+2020-05-10 04:41:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2020-05-10 04:41:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-05-10 04:41:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-05-10 04:41:45 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-05-10 04:41:45 [scrapy.core.engine] INFO: Spider opened
+2020-05-10 04:41:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-05-10 04:41:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-05-10 04:42:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kith.com/collections/all/products.json> (referer: None)
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAUSB0002FA01BLK0001-1.jpg?v=1571439354',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-military-shoulder-bag-w-buckle-black',
+ 'price': '280.00',
+ 'title': '1017 Alyx 9SM  Military Shoulder Bag w/ Buckle - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAUHB0001LE02RED0001-1.jpg?v=1576077894',
+ 'link': 'https://kith.com/products/aauhb0001le02red0001',
+ 'price': '1290.00',
+ 'title': '1017 Alyx 9SM Anna Bag - Red'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAUHB0001LE03GRY0002-1.jpg?v=1576077930',
+ 'link': 'https://kith.com/products/aauhb0001le03gry0002',
+ 'price': '1630.00',
+ 'title': '1017 Alyx 9SM Anna Bag - Silver'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAUHA0003FA01BLK000-1.jpg?v=1571439340',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-baseball-cap-w-nylon-buckle-black',
+ 'price': '145.00',
+ 'title': '1017 ALYX 9SM Baseball Cap w/ Nylon Buckle - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/ASAAMHA0001A042.BLK_-1.jpg?v=1571439195',
+ 'link': 'https://kith.com/products/asaamha0001a042-blk',
+ 'price': '116.00',
+ 'title': '1017 Alyx 9SM Baseball Cap With Buckle - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMTS0018A001-1-BL-4.jpg?v=1571439034',
+ 'link': 'https://kith.com/products/alyx-studio-city-scape-tee-black',
+ 'price': '196.00',
+ 'title': '1017 ALYX 9SM City Scape Tee - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMDN0001A001-1-BLK-3.jpg?v=1571439034',
+ 'link': 'https://kith.com/products/alyx-studio-classic-denim-w-keychain-black',
+ 'price': '484.00',
+ 'title': '1017 ALYX 9SM Classic Denim w Keychain - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMOU0079FA01BLK0001.jpg?v=1586351212',
+ 'link': 'https://kith.com/products/aamou0079fa01blk0001',
+ 'price': '395.00',
+ 'title': '1017 Alyx 9SM Coach Jacket - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/ASAVUTS0007A001.BLK-1.jpg?v=1571439226',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-collection-code-tee-black',
+ 'price': '151.00',
+ 'title': '1017 Alyx 9SM Collection Code Tee - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/ASAVUTS0007A007.WHT.JPG?v=1574999662',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-collection-code-tee-white',
+ 'price': '60.00',
+ 'title': '1017 Alyx 9SM Collection Code Tee - White'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/DSC_0081_fe64d368-9745-4afa-9f23-006720698299.jpg?v=1571439047',
+ 'link': 'https://kith.com/products/aawba0001b015-wmns',
+ 'price': '466.00',
+ 'title': '1017 ALYX 9SM Crossbody Bag - Silver'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/ASAAUBT0005A001.BLK-1.jpg?v=1571439195',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-double-trench-belt-black-silver',
+ 'price': '301.00',
+ 'title': '1017 Alyx 9SM Double Trench Belt - Black / Silver'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMTS0008A057-57-WHT-4.jpg?v=1571439034',
+ 'link': 'https://kith.com/products/alyx-studio-flag-in-thorn-hooded-tee-off-white',
+ 'price': '168.00',
+ 'title': '1017 ALYX 9SM Flag In Thorn Hooded Tee - Off White'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMTS0009A001-1-BLAC-2.jpg?v=1571439034',
+ 'link': 'https://kith.com/products/alyx-studio-flag-in-thorn-l-s-tee-black',
+ 'price': '202.00',
+ 'title': '1017 ALYX 9SM Flag In Thorn L/S Tee - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMTS0006A007-WHITE-1.jpg?v=1571439034',
+ 'link': 'https://kith.com/products/alyx-studio-flag-in-thorn-tee-white',
+ 'price': '196.00',
+ 'title': '1017 ALYX 9SM Flag In Thorn Tee - White'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMPA0005A001-BLACK-7.jpg?v=1571439034',
+ 'link': 'https://kith.com/products/alyx-studio-holster-pant-black',
+ 'price': '650.00',
+ 'title': '1017 ALYX 9SM Holster Pant - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMTS0132FA01BLK0001.jpg?v=1586351307',
+ 'link': 'https://kith.com/products/aamts0132fa01blk0001',
+ 'price': '254.00',
+ 'title': '1017 Alyx 9SM Hooded Tee w/ Screen Print - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMTS0123FA01WTH0001.jpg?v=1586351358',
+ 'link': 'https://kith.com/products/aamts0123fa01wth0001',
+ 'price': '225.00',
+ 'title': '1017 Alyx 9SM Hoodie Tee - White'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AlyxSilverWhiteBlack.jpg?v=1578657289',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-knit-boot-silver',
+ 'price': '717.50',
+ 'title': '1017 Alyx 9SM Knit Boot - Silver'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AlyxWhiteGreyBlack.jpg?v=1578657289',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-knit-boot-white',
+ 'price': '700.00',
+ 'title': '1017 Alyx 9SM Knit Boot - White'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMTS0002A090-91-TAU-4.jpg?v=1571439034',
+ 'link': 'https://kith.com/products/alyx-studio-l-s-hooded-tee-taupe',
+ 'price': '168.85',
+ 'title': '1017 ALYX 9SM L/S Hooded Tee - Taupe'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AVUTS0021FA01BLK0001.jpg?v=1586351434',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-l-s-roll-neck-tee-visual-black',
+ 'price': '160.00',
+ 'title': '1017 Alyx 9SM L/S Roll Neck Tee - Visual Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMTS0120FA01BLK0001.jpg?v=1586351515',
+ 'link': 'https://kith.com/products/aamts0120fa01blk0001',
+ 'price': '225.00',
+ 'title': '1017 Alyx 9SM L/S Tee w/ "A Sphere" - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AlyxLaceUpLowSneakerWithRemovableVibramSoleVar3-USN0006LE03BLK001_2.jpg?v=1578657291',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-studio-lace-up-derby-low-black',
+ 'price': '549.50',
+ 'title': '1017 Alyx 9SM Lace-Up Derby Low - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/ASAVUSW0001A001.BLK-1.jpg?v=1574999705',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-logo-collection-hoodie-black',
+ 'price': '244.00',
+ 'title': '1017 Alyx 9SM Logo Collection Hoodie - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AlyxLowBuckleBootWithFixedSole-UBO0009LE01BLK0001.jpg?v=1578657289',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-low-buckle-boot-with-fixed-sole-black',
+ 'price': '588.00',
+ 'title': '1017 Alyx 9SM Low Buckle Boot with Fixed Sole - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/ASAMMOU0005A001-1.jpg?v=1588070148',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-mackintosh-vest-black',
+ 'price': '1472.00',
+ 'title': '1017 Alyx 9SM Mackintosh Vest - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AlyxCamoBlack.jpg?v=1578657289',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-mid-boot-with-fixed-sole-camo-green',
+ 'price': '450.00',
+ 'title': '1017 Alyx 9SM Mid Boot with Fixed Sole - Camo Green'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAMSO0011FA01BLK0001.jpg?v=1586351555',
+ 'link': 'https://kith.com/products/aamso0011fa01blk0001',
+ 'price': '435.00',
+ 'title': '1017 Alyx 9SM Multipocket Short - Black'}
+2020-05-10 04:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kith.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0094/2252/products/AAUCB0003FA01BLK0001-1.jpg?v=1571439357',
+ 'link': 'https://kith.com/products/1017-alyx-9sm-new-mini-chest-rig-w-buckle-black',
+ 'price': '565.00',
+ 'title': '1017 Alyx 9SM New Mini Chest Rig w/ Buckle - Black'}
+2020-05-10 04:42:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://extrabutterny.com/collections/all/products.json> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2020-05-10 04:42:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://extrabutterny.com/collections/all/products.json> (referer: None)
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/EBWGTLW-1.jpg?v=1562942037',
+ 'link': 'https://extrabutterny.com/products/for-the-love-philippines-relief-tee',
+ 'price': '25.00',
+ 'title': '"For The Love" Philippines Relief Tee'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FRC253-BLACK-01.jpg?v=1547145904',
+ 'link': 'https://extrabutterny.com/products/fr2-axel-tee-frc253',
+ 'price': '21.60',
+ 'title': '#FR2 Axel Tee [FRC253]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FRC985-1.jpg?v=1586901934',
+ 'link': 'https://extrabutterny.com/products/fr2-mens-fake-news-tee',
+ 'price': '80.00',
+ 'title': '#FR2 Mens Fake News Tee'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FRC986-1.jpg?v=1586902221',
+ 'link': 'https://extrabutterny.com/products/fr2-mens-fake-news-tee-1',
+ 'price': '80.00',
+ 'title': '#FR2 Mens Fake News Tee'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FRC969-brn-1.jpg?v=1586902335',
+ 'link': 'https://extrabutterny.com/products/fr2-mens-the-pandemic-tee',
+ 'price': '80.00',
+ 'title': '#FR2 Mens The Pandemic Tee'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FRC969-1.jpg?v=1586902809',
+ 'link': 'https://extrabutterny.com/products/fr2-mens-the-pandemic-tee-1',
+ 'price': '80.00',
+ 'title': '#FR2 Mens The Pandemic Tee'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/137B9203.jpg?v=1578526445',
+ 'link': 'https://extrabutterny.com/products/fr2-photographer-padding-vest-frj049',
+ 'price': '207.00',
+ 'title': '#FR2 Photographer Padding Vest [FRJ049]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FRC589-1.jpg?v=1574289507',
+ 'link': 'https://extrabutterny.com/products/fr2-romantic-date-hoodie-frc589',
+ 'price': '107.00',
+ 'title': '#FR2 Romantic Date Hoodie [FRC589]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FRC587-BLK-1.jpg?v=1574289322',
+ 'link': 'https://extrabutterny.com/products/fr2-sales-promotion-hoodie-frc587',
+ 'price': '104.00',
+ 'title': '#FR2 Sales Promotion Hoodie [FRC587]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FRC587-KHK-1.jpg?v=1574289391',
+ 'link': 'https://extrabutterny.com/products/fr2-sales-promotion-hoodie-frc587-2',
+ 'price': '104.00',
+ 'title': '#FR2 Sales Promotion Hoodie [FRC587]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FRP036-BLACK-1X.jpg?v=1547232574',
+ 'link': 'https://extrabutterny.com/products/fr2-snap-jersey-cropped-pants-frp036',
+ 'price': '72.00',
+ 'title': '#FR2 Snap Jersey Cropped Pants [FRP036]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FRJ034-1.jpg?v=1558466829',
+ 'link': 'https://extrabutterny.com/products/fr2-velvet-souvenir-jacket-frj034',
+ 'price': '175.00',
+ 'title': '#FR2 Velvet Souvenir Jacket [FRJ034]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/H1B-1222.jpg?v=1586887423',
+ 'link': 'https://extrabutterny.com/products/11-by-boris-bidjan-saberi-11-hoodie',
+ 'price': '287.50',
+ 'title': '11 by Boris Bidjan Saberi 11 Hoodie'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FW6838-1.jpg?v=1582048541',
+ 'link': 'https://extrabutterny.com/products/adidas-4d-run-1-0-fw6838',
+ 'price': '165.00',
+ 'title': 'adidas 4D Run 1.0 [FW6838]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/D98157-01.jpg?v=1554849096',
+ 'link': 'https://extrabutterny.com/products/adidas-a-r-trainer-d98157',
+ 'price': '50.00',
+ 'title': 'adidas A.R. Trainer [D98157]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/Z07-3068-00-1.jpg?v=1542826483',
+ 'link': 'https://extrabutterny.com/products/adidas-archive_cm1-z07-3068-00',
+ 'price': '180.00',
+ 'title': 'Adidas Archive_CM1 [Z07-3068-00]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/GMWB5000GD-9-01.jpg?v=1553107963',
+ 'link': 'https://extrabutterny.com/products/adidas-archive_m1-z01-513-00',
+ 'price': '130.00',
+ 'title': 'Adidas Archive_M1 [CJ6308]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/Z01-3041-1.jpg?v=1542826241',
+ 'link': 'https://extrabutterny.com/products/adidas-archive_m1-z01-3041-00',
+ 'price': '130.00',
+ 'title': 'Adidas Archive_M1 [Z01-3041-00]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/Z013043-00-1.jpg?v=1542824183',
+ 'link': 'https://extrabutterny.com/products/adidas-archive_m1-z01-3043-00',
+ 'price': '130.00',
+ 'title': 'Adidas Archive_M1 [Z01-3043-00]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/EG0903-1.jpg?v=1575660634',
+ 'link': 'https://extrabutterny.com/products/adidas-by-alexander-wang-bball-soccer-eg0903',
+ 'price': '187.00',
+ 'title': 'adidas by Alexander Wang BBall Soccer [EG0903]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FV2903-1.jpg?v=1575660637',
+ 'link': 'https://extrabutterny.com/products/adidas-by-alexander-wang-bball-soccer-fv2903',
+ 'price': '187.00',
+ 'title': 'adidas by Alexander Wang BBall Soccer [FV2903]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/EE8489-ws-1.jpg?v=1558883072',
+ 'link': 'https://extrabutterny.com/products/adidas-by-alexander-wang-futureshell-ee8489',
+ 'price': '125.00',
+ 'title': 'adidas by Alexander Wang Futureshell [EE8489]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/EE9027--ws-1.jpg?v=1558883086',
+ 'link': 'https://extrabutterny.com/products/adidas-by-alexander-wang-futureshell-ee9027',
+ 'price': '125.00',
+ 'title': 'adidas by Alexander Wang Futureshell [EE9027]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FV2960-1.jpg?v=1575661141',
+ 'link': 'https://extrabutterny.com/products/adidas-by-alexander-wang-puff-trainer-fv2960',
+ 'price': '187.00',
+ 'title': 'adidas by Alexander Wang Puff Trainer [FV2960]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/EG4902-1.jpg?v=1575660832',
+ 'link': 'https://extrabutterny.com/products/adidas-by-alexander-wang-turnout-trainer-eg4902',
+ 'price': '150.00',
+ 'title': 'adidas by Alexander Wang Turnout Trainer [EG4902]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FV2914-1.jpg?v=1575660642',
+ 'link': 'https://extrabutterny.com/products/adidas-by-alexander-wang-turnout-trainer-fv2914',
+ 'price': '150.00',
+ 'title': 'adidas by Alexander Wang Turnout Trainer [FV2914]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/EF2437-01.jpg?v=1555349757',
+ 'link': 'https://extrabutterny.com/products/adidas-by-alexander-wang-wangbody-run-ef2437',
+ 'price': '110.00',
+ 'title': 'adidas by Alexander Wang Wangbody Run [EF2437]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/EF2438-01.jpg?v=1555349697',
+ 'link': 'https://extrabutterny.com/products/adidas-by-alexander-wang-wangbody-run-ef2438',
+ 'price': '110.00',
+ 'title': 'adidas by Alexander Wang Wangbody Run [EF2438]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FV7333-1.jpg?v=1584668870',
+ 'link': 'https://extrabutterny.com/products/adidas-by-pharrell-williams-mens-0-to-60-fv3333',
+ 'price': '200.00',
+ 'title': 'Adidas by Pharrell Williams Mens 0 To 60 [FV7333]'}
+2020-05-10 04:42:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://extrabutterny.com/collections/all/products.json>
+{'image': 'https://cdn.shopify.com/s/files/1/0236/4333/products/FX8025-1.jpg?v=1584668853',
+ 'link': 'https://extrabutterny.com/products/adidas-by-pharrell-williams-mens-campus-fx8025',
+ 'price': '100.00',
+ 'title': 'Adidas by Pharrell Williams Mens Campus [FX8025]'}
+2020-05-10 04:42:25 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.blensus.com/collections/all/products.json> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.blensus.com.
+2020-05-10 04:42:45 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 2 pages/min), scraped 60 items (at 60 items/min)
+2020-05-10 04:43:00 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.blensus.com/collections/all/products.json> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.blensus.com.
+2020-05-10 04:43:36 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.blensus.com/collections/all/products.json> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.blensus.com.
+2020-05-10 04:43:45 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 0 pages/min), scraped 60 items (at 0 items/min)
+2020-05-10 04:44:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.blensus.com/collections/all/products.json> (failed 4 times): DNS lookup failed: no results for hostname lookup: www.blensus.com.
+2020-05-10 04:44:45 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 0 pages/min), scraped 60 items (at 0 items/min)
+2020-05-10 04:44:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.blensus.com/collections/all/products.json> (failed 5 times): DNS lookup failed: no results for hostname lookup: www.blensus.com.
+2020-05-10 04:45:22 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.blensus.com/collections/all/products.json> (failed 6 times): DNS lookup failed: no results for hostname lookup: www.blensus.com.
+2020-05-10 04:45:22 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.blensus.com/collections/all/products.json>
+Traceback (most recent call last):
+  File "/home/kiosk/anaconda3/envs/shopify/lib/python3.7/site-packages/twisted/internet/defer.py", line 1416, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/home/kiosk/anaconda3/envs/shopify/lib/python3.7/site-packages/twisted/python/failure.py", line 512, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/kiosk/anaconda3/envs/shopify/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/kiosk/anaconda3/envs/shopify/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/kiosk/anaconda3/envs/shopify/lib/python3.7/site-packages/twisted/internet/endpoints.py", line 982, in startConnectionAttempts
+    "no results for hostname lookup: {}".format(self._hostStr)
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.blensus.com.
+2020-05-10 04:45:22 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-05-10 04:45:22 [scrapy.extensions.feedexport] INFO: Stored json feed (60 items) in: shopify.json
+2020-05-10 04:45:22 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 7,
+ 'downloader/exception_type_count/twisted.internet.error.DNSLookupError': 6,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 1,
+ 'downloader/request_bytes': 2193,
+ 'downloader/request_count': 9,
+ 'downloader/request_method_count/GET': 9,
+ 'downloader/response_bytes': 32128,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 216.602445,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 5, 9, 20, 45, 22, 425120),
+ 'item_scraped_count': 60,
+ 'log_count/DEBUG': 68,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 14,
+ 'memusage/max': 51224576,
+ 'memusage/startup': 47390720,
+ 'response_received_count': 2,
+ 'retry/count': 6,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/twisted.internet.error.DNSLookupError': 5,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 1,
+ 'scheduler/dequeued': 9,
+ 'scheduler/dequeued/memory': 9,
+ 'scheduler/enqueued': 9,
+ 'scheduler/enqueued/memory': 9,
+ 'start_time': datetime.datetime(2020, 5, 9, 20, 41, 45, 822675)}
+2020-05-10 04:45:22 [scrapy.core.engine] INFO: Spider closed (finished)

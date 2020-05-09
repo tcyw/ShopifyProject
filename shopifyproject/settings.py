@@ -8,8 +8,9 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-import datetime
+# import datetime
 import os
+from datetime import datetime
 
 BOT_NAME = 'shopifyproject'
 
@@ -95,6 +96,7 @@ NEWSPIDER_MODULE = 'shopifyproject.spiders'
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 # 1. 日志信息的配置
+
 now = datetime.now().strftime('_%Y_%m_%d_%H_%m')
 LOG_FILE = os.path.join('logs', 'shopify' + now + '.log')      # 日志存储路径
 LOG_LEVEL = "DEBUG"
